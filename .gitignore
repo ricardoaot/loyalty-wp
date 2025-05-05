@@ -1,0 +1,36 @@
+# Ignore core WordPress directories
+/wp-admin/
+/wp-includes/
+
+# Ignore user-uploaded content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Ignore downloaded plugins
+wp-content/plugins/*
+!wp-content/plugins/loyalty-integration/
+
+# Ignore downloaded themes
+wp-content/themes/*
+!wp-content/themes/mi-tema-personal/
+
+# Ignore sensitive or environment-specific files
+wp-config.php
+wp-config-sample.php
+.htaccess
+.env
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js dependencies and logs (if using tools in your theme)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Composer dependencies (if using Composer-based setup)
+vendor/
+composer.lock
